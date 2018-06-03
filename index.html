@@ -4,20 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="id=edge"
-  <title><title>Transformaio</title>
+  <title><title>Animations</title>
   <style>
   .box{
     width: 100px;
     height: 100px;
     background-color: red;
-    transition: transform .5s ease-in-out;
+    animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
   }
-  .box:hover{
-    transform: rotate(45deg);
+  @keyframes scaleAndRotateSquare {
+    0%{
+      transform: none;
+    }
+    50%{
+      transform: rotate(1turn) scale(.5, .5);
+      color:white;
+    }
+    100%{
+      transform: none;
+      color: yellow;
+    }
   }
   </style>
   </head>
   <body>
-    <div class="box"></div>
+    <div class="box">cool</div>
   </body>
 </html>
