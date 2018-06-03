@@ -4,22 +4,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="id=edge"
-    <title>Box Model</title>
-    <title>Inline Example</title>
+    <title>Position</title>
     <style>
-    .box{
-      background-color: red;
-      width:200px;
-      height:200px;
-      border: 2px solid black;
-      display:block;
-    }
+      body,html{
+        height:100%;
+        margin:0;
+        padding:0;
+      }
+      body{
+        height: 400%;
+        background-color: red;
+      }
+      .abs-box{
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .abs-child{
+        width:100px;
+        height:100px;
+        background-color: green;
+        position: absolute;
+        right:10px;
+        top:10px;
+      }
     </style>
   </head>
   <body>
-    <span class="box">1111</span>
-    <span class="box">1111</span>
-    <span class="box">111</span>
-
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
   </body>
 </html>
