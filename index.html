@@ -4,22 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="id=edge"
-  <title><title>Transitions</title>
+  <title><title>Transformaio</title>
   <style>
   .box{
-    background-color: green;
-    color: white;
-    transition:color 4s ease-in-out;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: transform .5s ease-in-out;
   }
   .box:hover{
-    background-color: red;
-    color:blue;
+    transform: rotate(45deg);
   }
   </style>
   </head>
   <body>
-      <span class="box">
-        text
-      </span>
+    <div class="box"></div>
   </body>
 </html>
